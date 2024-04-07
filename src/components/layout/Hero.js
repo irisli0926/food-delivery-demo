@@ -1,22 +1,29 @@
 import Image
  from "next/image";
+import Right from "../icons/Right";
 export default function Hero(){
     return(
-        <section className="grid grid-cols-2">
-            <div>
-                <h1 className="text-4xl font-semibold mt-5">
-                    This is SIMS4 Delivery! Order the best food for your sim!
+        <section className="hero">
+            {/* add padding from header */}
+            <div className="py-10">
+                <h1 className="text-4xl font-semibold my-5 leading-10">
+                    <span className="text-primary">SIMS4 Delivery</span> - <br />Order the best food <br />for your sim!
                 </h1>
                 {/* margin top */}
-                <p className="mt-4 text-gray-400">
+                <p className="my-6 text-gray-500 font-thin text-1xl">
                     What are you waiting for? Order your sim's favorite food to make her/him 
                     day! From fruit, vegatebls to gourment dishes, order right now to get the goodies!
                 </p>
-                <div>
-                    <button className="bg-primary text-white rounded-full">
-                        Click to Order!
+                {/* make space btw elements */}
+                <div className="flex gap-4 text-sm items-center">
+                    <button className="bg-primary items-center uppercase flex gap-1 text-white rounded-full px-5 py-3">
+                        Click to Order
+                        <Right />
                     </button>
-                    <button>Learn More</button>
+                    <button className="flex gap-1 py-2 text-gray-500 font-semibold">
+                        Learn More
+                        <Right />
+                    </button>
                 </div>
             </div>
             {/* only HTML element here */}

@@ -7,7 +7,7 @@ export default function Header() {
         {/* text color; bolded; fontsize */}
         <Link className="text-primary font-bold text-3xl" href={''}>SIMS4 Delivery</Link>
         {/* spread evenly; gap 5 btw */}
-        <nav className="flex items-center gap-9 text-gray-300">
+        <nav className="flex items-center gap-9 text-gray-500">
           <Link href={''}>Home</Link>
           <Link href={''}>Menu</Link>
           <Link href={''}>About</Link>

@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+section.hero{
+  /* apply some Tailwind classes */
+  @apply grid;
+  grid-template-columns: .5fr .8fr;
 
 
-
+}
 
 
 
