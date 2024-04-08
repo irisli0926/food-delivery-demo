@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#4276b7',
+        header_color: '#3cb9e1',
         // subheader: '#3caad6',
       },
       // backgroundImage: {
