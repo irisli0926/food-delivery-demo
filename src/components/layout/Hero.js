@@ -3,9 +3,9 @@ import Image
 import Right from "../icons/Right";
 export default function Hero(){
     return(
-        <section className="hero">
+        <section className="hero mt-3">
             {/* add padding from header */}
-            <div className="py-10">
+            <div className="py-9">
                 <h1 className="text-4xl font-semibold my-5 leading-10">
                     <span className="text-primary">SIMS4 Delivery</span> - <br />Order the best food <br />for your sim!
                 </h1>
