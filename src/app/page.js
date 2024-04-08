@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import MenuHome from "@/components/layout/MenuHome";
+import SectionHeader from "@/components/layout/sectionHeader";
 import Link from "next/link";
  
 export default function Home(){
@@ -9,10 +10,45 @@ export default function Home(){
       <Header />
       <Hero />
       <MenuHome />
-      <section> 
+      <section className="text-center my-16"> 
         {/* add contents */}
+        <SectionHeader 
+        subHeader={'Our Story'} 
+        mainHeader={'About us'} 
+        />
+        {/* flex: add space btw paragraphs */}
+        <div className="text-gray-500 max-w-md mx-auto mt-6 flex flex-col gap-4">
+          <p>
+            im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. 
+          </p>
+          <p>
+            im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. im good. 
+          </p>
+          <p>
+            im good. im good. im good. im good. im good. im good. im good. im good. im good. 
+          </p>
+        </div>
+      </section>
+      <section className="text-center my-8">
+        {/* contact */}
+        <SectionHeader 
+          subHeader={'Call us anytime!'} 
+          mainHeader={'Contact Info'} 
+        />
+        <div className="mt-6">
+          <a className="text-3xl underline text-gray-600 hover:text-black" href="tel:+sim4hot-line-ring">
+            +sim4 hot-line-ring
+          </a>
+          {/* <h1>+sim4 hot-line-ring</h1> */}
+
+
+        </div>
+        
 
       </section>
+      <footer className="border-t p-5 text-center text-gray-500 mt-20">
+        &copy; 2024 All rights reserved
+      </footer>
     
     </div>
   )
