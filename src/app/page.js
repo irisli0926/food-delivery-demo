@@ -1,13 +1,14 @@
 import Header from "@/components/layout/Header";
 import Hero from "@/components/layout/Hero";
 import MenuHome from "@/components/layout/MenuHome";
-import SectionHeader from "@/components/layout/sectionHeader";
+import SectionHeader from "@/components/layout/SectionHeader";
+import Footer from "@/components/layout/Footer";
 import Link from "next/link";
  
 export default function Home(){
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <MenuHome />
       <section className="text-center my-16"> 
@@ -46,9 +47,7 @@ export default function Home(){
         
 
       </section>
-      <footer className="border-t p-5 text-center text-gray-500 mt-20">
-        &copy; 2024 All rights reserved
-      </footer>
+      <Footer />
     
     </div>
   )

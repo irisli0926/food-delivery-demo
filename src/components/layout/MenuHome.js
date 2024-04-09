@@ -1,4 +1,4 @@
-import SectionHeader from "./sectionHeader";
+import SectionHeader from "./SectionHeader";
 import Image from "next/image";
 import MenuItem from "../menu/MenuItem";
 

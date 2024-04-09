@@ -10,6 +10,30 @@ section.hero{
 
 }
 
+input[type="email"],
+input[type="name"],
+input[type="password"],
+input[type="text"]
+ {
+  /* tailwind faster than just writing css */
+  @apply block w-full my-2 rounded-2xl;
+  /* block: vertical list */
+  @apply border p-2 border-gray-200 bg-gray-100;
+}
+
+/* all buttons in general  */
+button{
+  @apply block w-full text-black text-xl font-semibold;
+  @apply border p-2 border-gray-300 rounded-full px-7 py-3;
+
+}
+
+button[type="submit"], .submit{ 
+  @apply bg-primary text-white;
+
+}
+
+
 
 
 
